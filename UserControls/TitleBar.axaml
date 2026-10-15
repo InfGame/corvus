@@ -1,0 +1,50 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="50"
+             x:Class="Corvus.UserControls.TitleBar"
+             MaxHeight="50"
+             Classes="TitleBar">
+
+    <RelativePanel>
+        <Button Classes="LogoButton" 
+                RelativePanel.AlignLeftWithPanel="True"
+                >
+            <Svg Path="/Assets/Logo/Logo_Name.svg" 
+                   Margin="10, 0, 0, 0" />
+        </Button>
+
+        <!--Window Action Buttons-->
+        <Button Name="CloseButton" Classes="CloseButton" 
+                RelativePanel.AlignRightWithPanel="True"
+                >
+            <Svg Path="/Assets/Icons/General/Close.svg" 
+                 Margin="15"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Classes="Icons"
+                 />
+        </Button>
+        <Button Name="WinFullButton" Classes="WinFullButton" 
+                RelativePanel.LeftOf="CloseButton"
+                >
+            <Svg Path="/Assets/Icons/WindowActions/Windowed.svg" 
+                 Margin="15"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Classes="Icons"
+                 />
+        </Button>
+        <Button Name="MinButton" Classes="MinButton" 
+                RelativePanel.LeftOf="WinFullButton"
+                >
+            <Svg Path="/Assets/Icons/WindowActions/Minimize.svg" 
+                 Margin="15"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Classes="Icons"
+                 />
+        </Button>
+    </RelativePanel>
+</UserControl>

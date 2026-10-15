@@ -10,6 +10,6 @@
     </Application.DataTemplates>
 
     <Application.Styles>
-        <FluentTheme />
+        <StyleInclude Source="avares://Corvus/Styles/ApplicationStyle.axaml" />
     </Application.Styles>
 </Application>

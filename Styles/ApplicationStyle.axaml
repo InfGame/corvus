@@ -1,0 +1,44 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:usercontrols="using:Corvus.UserControls"
+        xmlns:views="using:Corvus.Views">
+    <Design.PreviewWith>
+        <Window Width="1920" Height="1080">
+            <RelativePanel>
+                <usercontrols:TitleBar RelativePanel.AlignTopWithPanel="True" />
+        
+            </RelativePanel>
+        </Window>
+    </Design.PreviewWith>
+    <!--
+        Color Palette:
+
+        Background:
+        Dark: #0a0d10
+        Default #141a1f
+        Light: #1e272f
+        Lighter: #28343e
+
+        Text:
+        Default: #9cb6d3
+    -->
+    <Style Selector="Window">
+        <Setter Property="Background" Value="#141a1f" />
+    </Style>
+    <Style Selector="usercontrols|TitleBar">
+        <Setter Property="Background" Value="#1e272f" />
+    </Style>
+    <!--SVG Icon Buttons-->
+    <Style Selector="Svg.Icons">
+        <Setter Property="(Svg.Css)" Value="path, line, polyline, polygon { stroke: #2f4b6a; fill:#2f4b6a; }" />
+    </Style>
+    <Style Selector="Button:pointerover Svg.Icons">
+        <Setter Property="(Svg.Css)" Value="path, line, polyline, polygon { stroke: #3f638d; fill:#3f638d; }" />
+    </Style>
+    <Style Selector="Button.LogoButton Svg">
+        <Setter Property="(Svg.Css)" Value="path, line, polyline, polygon { stroke: #7296c0; fill:#7296c0; }" />
+    </Style>
+    <Style Selector="Button.LogoButton:pointerover Svg">
+        <Setter Property="(Svg.Css)" Value="path, line, polyline, polygon { stroke: #b9cbdf; fill:#b9cbdf; }" />
+    </Style>
+</Styles>
