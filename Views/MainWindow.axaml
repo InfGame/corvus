@@ -10,7 +10,7 @@
         Icon="/Assets/corvus-favicon.ico"
         Title="Corvus"
         ExtendClientAreaToDecorationsHint="True"
-        WindowDecorations="None"
+        WindowDecorations="BorderOnly"
         WindowState="Maximized">
 
     <Design.DataContext>
@@ -19,7 +19,8 @@
         <vm:MainViewModel />
     </Design.DataContext>
     <RelativePanel>
-        <usercontrols:TitleBar RelativePanel.AlignTopWithPanel="True" />
+        <usercontrols:TitleBar WindowDecorationProperties.ElementRole="TitleBar"
+                               RelativePanel.AlignTopWithPanel="True" />
         
     </RelativePanel>
 </Window>
